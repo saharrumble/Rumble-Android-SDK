@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="image_border_start">#40990000</color>
+    <color name="image_border_end">#FF660000</color>
+    <color name="image_border_center">#FFFF3333</color>
+</resources>

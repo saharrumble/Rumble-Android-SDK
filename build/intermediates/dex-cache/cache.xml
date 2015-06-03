@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/saharkroglen/.gradle/caches/modules-2/files-2.1/de.greenrobot/eventbus/2.4.0/ddd166d01b3158d1c00576d29f7ed15c030df719/eventbus-2.4.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ddd166d01b3158d1c00576d29f7ed15c030df719">
+        <dex dex="/Users/saharkroglen/source/RumbleSDK/Android/Sample-App/build/intermediates/pre-dexed/debug/eventbus-2.4.0-c95c9a1775a5df9bf111eaa5add98fa1d6db5ab9.jar" />
+    </item>
+    <item
+        jar="/Users/saharkroglen/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.1.1/support-annotations-22.1.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
+        <dex dex="/Users/saharkroglen/source/RumbleSDK/Android/Sample-App/build/intermediates/pre-dexed/debug/support-annotations-22.1.1-0c1628b0bc24ac2e61dc1d336df2a079968eb0cd.jar" />
+    </item>
+    <item
+        jar="/Users/saharkroglen/source/RumbleSDK/Android/Sample-App/build/intermediates/exploded-aar/Android/rumble-analytics/unspecified/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="fb935fbb6c6478bf93dd2ece9e8a910fb638ff08">
+        <dex dex="/Users/saharkroglen/source/RumbleSDK/Android/Sample-App/build/intermediates/pre-dexed/debug/classes-6b2ce7e235c5872784200fb99d2f2c5a0eb06411.jar" />
+    </item>
+    <item
+        jar="/Users/saharkroglen/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.4.1/55605135bd7b836612e0bba7037c9669f6ccf89f/jackson-annotations-2.4.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="55605135bd7b836612e0bba7037c9669f6ccf89f">
+        <dex dex="/Users/saharkroglen/source/RumbleSDK/Android/Sample-App/build/intermediates/pre-dexed/debug/jackson-annotations-2.4.1-c749b778b0649273dc3d83237a341705728182fa.jar" />
+    </item>
+    <item
+        jar="/Users/saharkroglen/.gradle/caches/modules-2/files-2.1/com.mcxiaoke.volley/library/1.0.16/d8f5b9114ebe0f76de7fbf55e950540959ce4ff8/library-1.0.16.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d8f5b9114ebe0f76de7fbf55e950540959ce4ff8">
+        <dex dex="/Users/saharkroglen/source/RumbleSDK/Android/Sample-App/build/intermediates/pre-dexed/debug/library-1.0.16-4abb32322f0e488339bd856c5b7b75f1ff0bd858.jar" />
+    </item>
+    <item
+        jar="/Users/saharkroglen/source/RumbleSDK/Android/Sample-App/build/intermediates/exploded-aar/Android/rumble-core/unspecified/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="49bff25f3851947fc6d9d96c5594e34a961cf138">
+        <dex dex="/Users/saharkroglen/source/RumbleSDK/Android/Sample-App/build/intermediates/pre-dexed/debug/classes-6d4b9336413e64637fd12ec15bc3f372c88d84f7.jar" />
+    </item>
+    <item
+        jar="/Users/saharkroglen/source/RumbleSDK/Android/Sample-App/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
+        <dex dex="/Users/saharkroglen/source/RumbleSDK/Android/Sample-App/build/intermediates/pre-dexed/debug/classes-b66d1b99f503e04b2cc1e05c9eed1fd5e3d87783.jar" />
+    </item>
+    <item
+        jar="/Users/saharkroglen/source/RumbleSDK/Android/Sample-App/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="/Users/saharkroglen/source/RumbleSDK/Android/Sample-App/build/intermediates/pre-dexed/debug/classes-044588d3b27b7f845070801aea4b9c85133704ec.jar" />
+    </item>
+    <item
+        jar="/Users/saharkroglen/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.4.1/f07c773f7b3a03c3801d405cadbdc93f7548e321/jackson-databind-2.4.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="f07c773f7b3a03c3801d405cadbdc93f7548e321">
+        <dex dex="/Users/saharkroglen/source/RumbleSDK/Android/Sample-App/build/intermediates/pre-dexed/debug/jackson-databind-2.4.1-fabc239a1d80ee29f3c9c7062af12d344ff446fc.jar" />
+    </item>
+    <item
+        jar="/Users/saharkroglen/.gradle/caches/modules-2/files-2.1/org.androidannotations/androidannotations-api/3.3.1/3b8b2740d5f8680a9eac6f6f726925988059fccd/androidannotations-api-3.3.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3b8b2740d5f8680a9eac6f6f726925988059fccd">
+        <dex dex="/Users/saharkroglen/source/RumbleSDK/Android/Sample-App/build/intermediates/pre-dexed/debug/androidannotations-api-3.3.1-d33883dee2540a97051c4f8d30e0ce350a27b3b3.jar" />
+    </item>
+    <item
+        jar="/Users/saharkroglen/source/RumbleSDK/Android/Sample-App/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/libs/internal_impl-22.1.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="/Users/saharkroglen/source/RumbleSDK/Android/Sample-App/build/intermediates/pre-dexed/debug/internal_impl-22.1.1-4651fc7bc7cda27c908eb9ed12d124f489764ecf.jar" />
+    </item>
+    <item
+        jar="/Users/saharkroglen/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.4.1/b130bcfb5a9c410c3cbd2e0adec9437e69a39e2c/jackson-core-2.4.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b130bcfb5a9c410c3cbd2e0adec9437e69a39e2c">
+        <dex dex="/Users/saharkroglen/source/RumbleSDK/Android/Sample-App/build/intermediates/pre-dexed/debug/jackson-core-2.4.1-a0456a5cc054492f6ebbbeb21431cdf014b89ace.jar" />
+    </item>
+    <item
+        jar="/Users/saharkroglen/source/RumbleSDK/Android/Sample-App/build/intermediates/jacoco/jacocoagent.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e084e6b8a000c2a3fd71fa1c6f603f47f90ea7c4">
+        <dex dex="/Users/saharkroglen/source/RumbleSDK/Android/Sample-App/build/intermediates/pre-dexed/debug/jacocoagent-801ce3e88552807f2d3b716e65606c526644fcc5.jar" />
+    </item>
+    <item
+        jar="/Users/saharkroglen/.gradle/caches/modules-2/files-2.1/com.nostra13.universalimageloader/universal-image-loader/1.9.3/a85588bec3e2c4584d593d3f15df1677321bca72/universal-image-loader-1.9.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a85588bec3e2c4584d593d3f15df1677321bca72">
+        <dex dex="/Users/saharkroglen/source/RumbleSDK/Android/Sample-App/build/intermediates/pre-dexed/debug/universal-image-loader-1.9.3-7a94de3cca9a2e1f98f327173dd6434983946909.jar" />
+    </item>
+    <item
+        jar="/Users/saharkroglen/source/RumbleSDK/Android/Sample-App/build/intermediates/exploded-aar/Android/rumble-push/unspecified/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d50ec523c14dae0bb10a7fdf73be52c00b837270">
+        <dex dex="/Users/saharkroglen/source/RumbleSDK/Android/Sample-App/build/intermediates/pre-dexed/debug/classes-19366626e5b1e6d83afee631954b4e78b04ebef6.jar" />
+    </item>
+
+</items>

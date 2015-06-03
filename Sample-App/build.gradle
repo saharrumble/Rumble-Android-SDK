@@ -1,0 +1,160 @@
+apply plugin: 'com.android.application'
+apply plugin: 'jacoco'
+
+apply plugin: 'com.neenbedankt.android-apt' //needed for source code generation (like with the Dagger/androidAnnotations Dependency Injectors)
+def AAVersion = '3.+' //android annotrations version
+
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'org.robolectric:robolectric-gradle-plugin:0.14.1'
+    }
+}
+
+// Version Calculations
+def versionMajor = 1
+def versionMinor = 0
+def versionPatch = 0
+def versionBuild = 0
+
+def gitSha = 'git rev--parse --short HEAD'.execute([], project.rootDir).text.trim()
+def buildTime = new Date().format("yyyy-MM-dd'T'HH:mm'Z'", TimeZone.getTimeZone("UTC"))
+
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+
+    signingConfigs {
+        release {
+            storeFile file("../rumble-sample/keystore/release/release_poster.jks")
+            storePassword "Po#5ter"
+            keyAlias "Poster"
+            keyPassword "Po#5ter"
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.rumble"
+        minSdkVersion 15
+        targetSdkVersion 21
+
+        versionCode versionMajor * 10000 + versionMinor * 1000 + versionPatch * 100 + versionBuild
+        versionName "${versionMajor}.${versionMinor}.${versionPatch}"
+
+        buildConfigField "String", "GIT_SHA", "\"${gitSha}\""
+        buildConfigField "String", "BUILD_TIME", "\"${buildTime}\""
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFile 'proguard-rules.pro'
+            debuggable true
+            testCoverageEnabled = true
+        }
+
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false  //turning this to true will cause "build failure" when used with the apt-plugin for some reason. thus turned it to false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    // THis prevents duplication errors when we run proguard.
+    packagingOptions {
+        exclude 'META-INF/MANIFEST.MF'
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+}
+
+
+//androidAnnotations
+dependencies {
+    apt "org.androidannotations:androidannotations:$AAVersion"
+    compile "org.androidannotations:androidannotations-api:$AAVersion"
+    compile project(':rumble-analytics')
+    compile project(':rumble-core')
+    compile project(':rumble-push')
+}
+
+apt {
+    arguments {
+        androidManifestFile variant.outputs[0].processResources.manifestFile
+        resourcePackageName android.defaultConfig.applicationId
+        // if you have multiple outputs (when using splits), you may want to have other index than 0
+
+        // You can set optional annotation processing options here, like these commented options:
+        logLevel 'INFO'
+        logFile '/log/aa.log'
+    }
+}
+//androidAnnotations - end
+
+dependencies {
+
+    compile "com.android.support:appcompat-v7:21.0.+"
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'
+    compile (
+            [group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.4.1'],
+            [group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.4.1'],
+            [group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.4.1']
+    )
+
+
+
+}
+
+//robolectric
+//evaluationDependsOn(':app')
+
+//dependencies {
+//    def androidModule = project(':app')
+//    compile androidModule
+//
+//    testCompile androidModule.android.applicationVariants.toList().first().javaCompile.classpath
+//    testCompile androidModule.android.applicationVariants.toList().first().javaCompile.outputs.files
+//    testCompile files(androidModule.plugins.findPlugin("com.android.application").getBootClasspath())
+//
+//    testCompile 'junit:junit:4.11'
+//    testCompile 'org.robolectric:robolectric:2.4'
+//
+//    testCompile 'org.assertj:assertj-core:1.7.1'
+//}
+//
+////This rule is to prevent iOExceptions "superclass not present"
+//tasks.withType(Test) {
+//    scanForTestClasses = false
+//    include "**/*Test.class" // whatever Ant pattern matches your test class files
+//}
+
+//robolectric end
+
+jacoco {
+    toolVersion = "0.7.2.201409121644"
+
+}
+
+def coverageSourceDirs = [
+        '../rumble-sample/src/main/java'
+]
+
+

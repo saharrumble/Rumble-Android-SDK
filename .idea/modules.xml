@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Android.iml" filepath="$PROJECT_DIR$/Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sample-App/Sample-App.iml" filepath="$PROJECT_DIR$/Sample-App/Sample-App.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rumble-sample/Sample-App.iml" filepath="$PROJECT_DIR$/rumble-sample/Sample-App.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rumble-analytics/rumble-analytics.iml" filepath="$PROJECT_DIR$/rumble-analytics/rumble-analytics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sdk1/rumble-analytics.iml" filepath="$PROJECT_DIR$/sdk1/rumble-analytics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rumble-core/rumble-core.iml" filepath="$PROJECT_DIR$/rumble-core/rumble-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libcore/rumble-core.iml" filepath="$PROJECT_DIR$/libcore/rumble-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rumble-push/rumble-push.iml" filepath="$PROJECT_DIR$/rumble-push/rumble-push.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sdk2/rumble-push.iml" filepath="$PROJECT_DIR$/sdk2/rumble-push.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/rumble-sample.iml" filepath="$PROJECT_DIR$/app/rumble-sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rumble-tests/rumble-tests.iml" filepath="$PROJECT_DIR$/rumble-tests/rumble-tests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/robolectric_tests/rumble-tests.iml" filepath="$PROJECT_DIR$/robolectric_tests/rumble-tests.iml" />
+    </modules>
+  </component>
+</project>
